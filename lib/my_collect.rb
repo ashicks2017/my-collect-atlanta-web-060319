@@ -1,4 +1,4 @@
-def my_collect(collection)
+def my_collect(array)
   i = 0
   result = []
   while i < array.length
@@ -8,3 +8,8 @@ def my_collect(collection)
  result
 end
 
+array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
+my_collect(array) do |name|
+  name.split(" ").first
+end
+Should return:
