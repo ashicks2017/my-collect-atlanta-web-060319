@@ -3,6 +3,7 @@ i = 0
 result = []
 while i < array.length
 resuls <<(yield array[i])
+i +=1
 end
 
 
